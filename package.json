@@ -1,0 +1,58 @@
+{
+  "name": "event-emitter",
+  "version": "1.0.0",
+  "description": "Event Emitter for Quick web audio editor",
+  "main": "EventEmitter.js",
+  "scripts": {
+    "dev": "rollup --config --watch",
+    "build": "npm run lint && npm run test:build && npm run clean && rollup --config",
+    "build:prod": "rollup ./src/EventEmitter.js --o ./dist/EventEmitter.js --f cjs",
+    "clean": "rm -rf ./dist && mkdir dist",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint --fix \"src/**/*.js\"",
+    "test": "jest --watchAll",
+    "test:build": "jest",
+    "jest:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.winner4ever.com:10022/fabio/quick-editor.git"
+  },
+  "keywords": [
+    "Web",
+    "audio",
+    "editor",
+    "sync"
+  ],
+  "author": "Fabio Prada",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "jest": "^23.1.0",
+    "jest-mock-console": "^0.4.0",
+    "prettier": "^1.13.5",
+    "rollup": "^0.60.1",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/src/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "modulePaths": [
+      "src"
+    ]
+  }
+}
