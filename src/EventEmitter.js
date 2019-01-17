@@ -8,6 +8,10 @@ export default class EventEmitter {
       this.events[event] = []
     }
 
+    if (typeof listener !== 'function') {
+      return null
+    }
+
     this.events[event].push(listener)
     return () => this.removeListener(event, listener)
   }
