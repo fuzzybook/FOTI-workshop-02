@@ -2,9 +2,12 @@
 
 Frontenders Ticino mini workshop 01 - observer
 
-*Mattia
-*July
-*Simone
-*Erdo
+* Mattia
 
-\*Fabio
+* July
+
+* Simone
+
+* Erdo
+
+* Fabio
