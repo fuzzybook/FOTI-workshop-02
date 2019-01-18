@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.winner4ever.com:10022/fabio/quick-editor.git"
+    "url": "https://github.com/fuzzybook/FOTI-workshop-01.git"
   },
   "keywords": [
     "Web",
