@@ -1,0 +1,12 @@
+{
+    "git.enableSmartCommit": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
